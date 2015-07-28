@@ -15,7 +15,7 @@ Count and sum the scores of a ten pin bowling game for one player as a single-pa
 
 Live demo on Heroku:
 -------
-[Bowling Scorecard](https://dry-harbor-7560.herokuapp.com/)
+[Bowling Scoresheet](https://dry-harbor-7560.herokuapp.com/)
 
 
 Technologies used:
