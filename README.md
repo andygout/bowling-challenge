@@ -1,28 +1,40 @@
-[![Build Status](https://travis-ci.org/andygout/bowling-challenge.png)](https://travis-ci.org/andygout/bowling-challenge)
+[![Build Status](https://travis-ci.org/andygout/bowling-scoresheet.png)](https://travis-ci.org/andygout/bowling-scoresheet)
 
 
 Bowling Challenge
 =================
 
 
-Challenge:
+Brief:
 -------
 
-Count and sum the scores of a bowling game for one player (reminder of the rules at foot of README)
+Count and sum the scores of a ten pin bowling game for one player as a single-page application
+
+[The Rules of Ten Pin Bowling](https://github.com/andygout/bowling-scoresheet#the-rules-of-ten-pin-bowling)
 
 
-Technologies Used:
+Live demo on Heroku:
+-------
+[Bowling Scorecard](https://dry-harbor-7560.herokuapp.com/)
+
+
+Technologies used:
 -------
 
 - Javascript (language) with jQuery (Javascript library)
-- Tested using Jasmine (behavior-driven development framework for testing JavaScript code)
-- Deployed to Heroku as static site using Rack gem
+- Tested using [Jasmine](http://jasmine.github.io/) (behavior-driven development framework for testing JavaScript code)
+- Deployed to Heroku [as static site using Rack gem](https://devcenter.heroku.com/articles/static-sites-ruby)
 
 
-Setup
+Site setup:
 -------
 
 - Run site on local server: `$ open public/index.html`
+
+
+Testing setup:
+-------
+
 - Run Jasmine tests: `$ open public/SpecRunner.html`
 
 
@@ -52,27 +64,22 @@ I want to be presented with that option
 ```
 
 
-Learning
+Learning:
 -------
 
 The logic of the strikes and spares is very complex, especially in terms of the final score for a specific frame not being available until a further one or possibly two frames are played (complicated further by the final frame). The logic had to be made as granular as possible and so I tried to atomise the larger methods into smaller, more descriptive ones, as it was very easy to fall victim to a God method with numerous if/else statements that controlled the entire game logic. Attempting the challenge again I would write separate `frame` and `final_frame` files to fully separate those sets of logic given they are so different.
 
 I felt a substantial number of tests were necessary given the numerous variant outcomes and so I tried to cover these as comprehensively as possible.
 
-I enjoyed playing around with jQuery and the immediate responsiveness of a single page application (SPA) was very gratifying.
+I enjoyed playing around with jQuery and the immediate responsiveness of a single-page application (SPA) was very gratifying.
 
-Deploying a static site to Heroku nevertheless required a server; Rack was used (installed as gem `gem 'rack'`), with `config.ru` instructing it to serve the site as static ([Heroku Dev Center: Creating Static Sites in Ruby with Rack](https://devcenter.heroku.com/articles/static-sites-ruby))
+Deploying a static site to Heroku nevertheless required a server; Rack was used (installed as gem `gem 'rack'`), with `config.ru` instructing it to serve the site as static ([Heroku Dev Center: Creating Static Sites in Ruby with Rack](https://devcenter.heroku.com/articles/static-sites-ruby)).
 
 
-Next Steps
+Next steps:
 -------
 
 - UI testing with [Jasmine-jQuery](https://github.com/velesin/jasmine-jquery)
-
-
-Live demo on Heroku:
--------
-[Bowling Scorecard](https://dry-harbor-7560.herokuapp.com/)
 
 
 Links:
