@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/andygout/bowling-scoresheet.png)](https://travis-ci.org/andygout/bowling-scoresheet)
 
 
-Bowling Challenge
+Bowling Scoresheet
 =================
 
 
@@ -93,10 +93,10 @@ Links:
 Images:
 -------
 
-- Sign up
+#### Sign up
 ![Start Screen](images/start_screen.png)
 
-- Sign up errors
+#### Sign up errors
 ![Game Over](images/game_over.png)
 
 
